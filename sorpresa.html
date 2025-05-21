@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sorpresa de Cumpleaños</title>
+  <link rel="stylesheet" href="sorpresa.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- VIDEO EN EL CENTRO -->
+    <div class="center-video">
+      <video autoplay loop muted playsinline>
+        <source src="imagenes/video.mp4" type="video/mp4" />
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </div>
+
+    <!-- IMÁGENES ALREDEDOR -->
+    <div class="surrounding-img img1">
+      <img src="imagenes/img1.jpeg" alt="Imagen 1" />
+    </div>
+    <div class="surrounding-img img2">
+      <img src="imagenes/img2.jpeg" alt="Imagen 2" />
+    </div>
+    <div class="surrounding-img img3">
+      <img src="imagenes/img3.jpeg" alt="Imagen 3" />
+    </div>
+    <div class="surrounding-img img4">
+      <img src="imagenes/img4.jpeg" alt="Imagen 4" />
+    </div>
+    <div class="surrounding-img img5">
+      <img src="imagenes/img5.jpeg" alt="Imagen 5" />
+    </div>
+    <div class="surrounding-img img6">
+      <img src="imagenes/img6.jpeg" alt="Imagen 6" />
+       </div>
+    <h1>¡Feliz Cumpleaños!</h1>
+    <div class="boton-regreso">
+  <button onclick="window.history.back()">❤️ Regresar con amor</button>
+</div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const h1 = document.querySelector("h1");
+    const boton = document.querySelector(".boton-regreso");
+
+    setTimeout(() => {
+      h1.classList.add("hidden");          // Oculta el H1
+      boton.classList.add("visible");      // Muestra el botón
+    }, 10000); // 5000 milisegundos = 5 segundos
+  });
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90vw;
+  padding: 2rem;
+  text-align: center;
+  animation: aparecer 1s ease-in-out;
+  box-sizing: border-box;
+}
+
+.tarjeta h1 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.tarjeta h2 {
+  margin-top: 2rem;
+  color: #c0392b;
+  font-size: 1.4rem;
+}
+
+.tarjeta p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.foto-romantica {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.boton-corazon {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-corazon button {
+  background-color: #ff4d88;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 77, 136, 0.4);
+  max-width: 300px;
+  width: 90vw;
+}
+
+.boton-corazon button:hover {
+  background-color: #01380a;
+  transform: scale(1.05);
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .tarjeta h1 {
+    font-size: 1.5rem;
+  }
+  .tarjeta h2 {
+    font-size: 1.2rem;
+  }
+  .tarjeta p {
+    font-size: 1rem;
+  }
+  .boton-corazon button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Feliz Cumpleaños, Mi Amor</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+    <h1>🎉 ¡Feliz 28 Años, Amor! 🎂</h1>
+    <p>Un día especial para alguien muy especial</p>
+</header>
+
+<nav>
+    <a href="mensaje.html">Mensaje</a>
+    <a href="sorpresa.html">Sorpresa</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="mensaje">
+      <h2>Te amo muchísimo ❤️</h2>
+      <p>Gracias por ser quien eres, por tu amor, tu paciencia y tu risa contagiosa.</p>
+      <p>Que este nuevo año te traiga alegría, éxitos y mucha felicidad.</p>
+    </section>
+
+    <section id="sorpresa">
+      <h2>Tu sorpresa</h2>
+      <button id="btnSorpresa" onclick="mostrarSorpresa()">Haz clic aquí</button>
+
+      <div id="contenidoSorpresa" class="oculto">
+        <!-- Aquí aparecerá el video -->
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Si quieres, envíame un mensaje y te responderé con más amor 💌</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Con todo mi amor</p>
+  </footer>
+
+  <script>
+    function mostrarSorpresa() {
+      document.getElementById("btnSorpresa").style.display = "none";
+      const contenedor = document.getElementById("contenidoSorpresa");
+      contenedor.classList.remove("oculto");
+      contenedor.innerHTML = `
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Ox7dlccku8M"
+          title="Video sorpresa"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      `;
+    }
+  </script>
+
+</body>
+</html>
